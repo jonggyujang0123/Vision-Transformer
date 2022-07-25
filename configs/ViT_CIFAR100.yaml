@@ -1,0 +1,47 @@
+exp_name: 'ViT_CIFAR100_0'
+agent: 'ViTAgent'
+
+cuda: true
+seed: 1
+
+some_model_attribute: 0
+
+batch_size: 64
+test_batch_size: 64
+
+learning_rate: 8.0e-04
+weight_decay: 0
+beta1: 0.5
+beta2: 0.999
+momentum: 0.9
+
+max_epoch: 20
+
+validate_every: 90
+log_interval: 90
+
+save_best: True
+
+checkpoint_file: 'checkpoint.pth.tar'
+checkpoint_dir: './experiments'
+
+data_loader": 'CIFAR100DataLoader'
+data_loader_workers: 2
+pin_memory: true
+async_loading: true
+im_size: 224
+data_mode: 'download'
+data_folder: 
+  value: './data/cifar100'
+ViT:
+  n_classes: 100
+  in_channels: 3
+  im_size: 224
+  n_heads: 8 
+  d_hid: 2048 
+  d_emb: 768 
+  p_size: 16 
+  depth: 12
+  dropout: 0.1
+  classifier: 'token'
+  is_resnet: True

@@ -9,6 +9,11 @@ python main.py [mode] [config] [gpuids]
 python main.py train configs/ViT_CIFAR100.yaml 0,1
 ```
 
+## CIFAR 100 benchmark
+
+|Scheme|ViT|R50ViT|
+|------|---|---|
+|CIFAR100|-|-|
 
 
 ## Wandb implementation 

@@ -6,7 +6,7 @@ For train/test run the following code
 
 ```
 python main.py [mode] [config] [gpuids]
-python main.py train configs/mnist_exp_0.yaml 0,1
+python main.py train configs/ViT_CIFAR100.yaml 0,1
 ```
 
 
